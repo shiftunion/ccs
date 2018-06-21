@@ -5,6 +5,7 @@ import { AppRoutes }        from './app/routes';
 import { HomeRoutes }       from './home/routes';
 import { CounterRoutes }    from './counter/routes';
 import { ComponentsRoutes } from './components/routes';
+import { OnboardRoutes }         from './onboard/routes';
 
 Vue.use(VueRouter);
 Vue.use(Meta);
@@ -18,7 +19,8 @@ export const router: VueRouter = new VueRouter(
       ...HomeRoutes,
       ...CounterRoutes,
       ...ComponentsRoutes,
-    ],
+      ...OnboardRoutes,
+   ],
     scrollBehavior(to, from, savedPosition) {
       if (to.hash) {
         return { selector: to.hash };
