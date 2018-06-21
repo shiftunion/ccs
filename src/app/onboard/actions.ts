@@ -43,7 +43,7 @@ export const OnboardActions: IOnboardActions = {
   setFirstName({ commit, state }: ActionContext<IOnboardState, IOnboardState>): Promise<any> {
     return new Promise((resolve, reject) => {
        setTimeout(() => {
-        console.log(commit.toString);
+        // console.log(commit.toString);
         resolve(commit('SET_FIRST_NAME', 'dudec'));
       }, 300);
     });
