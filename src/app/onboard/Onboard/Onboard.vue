@@ -43,7 +43,7 @@
       </vue-grid-item>
       <!-- 
         
-                  v-on:blur="setFirstName"
+                  
           :value="firstName"
         
         <vue-grid-item>
