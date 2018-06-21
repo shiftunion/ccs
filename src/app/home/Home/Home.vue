@@ -1,5 +1,6 @@
 <template>
   <div :class="$style.home">
+    {{ $t('home.test' /* this is a test!!! */) }}
     <stage />
     <dev-ex />
     <enterprise-ready />

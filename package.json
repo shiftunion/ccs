@@ -53,7 +53,7 @@
     "build:isomorphic": "cross-env NODE_ENV=production webpack --mode production --config ./config/webpack.isomorphic.config.js",
     "build:server": "cross-env NODE_ENV=production webpack --mode production --config ./config/webpack.server.config.js",
     "prebuild": "npm run clean",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "commitmsg": "commitlint -e $GIT_PARAMS --no-verify",
     "precommit": "concurrently \"npm run lint\" \"npm run test -- --silent\"",
     "ci": "concurrently \"npm run lint\" \"npm run test:coverage -- --runInBand\"",
     "postci": "codecov -f ./coverage/*.json && npm run build:spa && npm run build && concurrently \"npm run build-storybook\" \"vuepress build docs\"",
@@ -97,8 +97,7 @@
     "default-locale": "en",
     "supported-locales": [
       "en",
-      "de",
-      "pt"
+      "de"
     ]
   },
   "dependencies": {
