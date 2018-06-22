@@ -1,12 +1,12 @@
-import Vue                      from 'vue';
-import Vuex, { Store }          from 'vuex';
+import Vue from 'vue';
+import Vuex, { Store } from 'vuex';
 import { DefaultState, IState } from './state';
-import { VuexPersist }          from './shared/plugins/vuex-persist/vuex-persist';
-import { PersistLocalStorage }  from './shared/plugins/vuex-persist/PersistLocalStorage';
+import { VuexPersist } from './shared/plugins/vuex-persist/vuex-persist';
+import { PersistLocalStorage } from './shared/plugins/vuex-persist/PersistLocalStorage';
 import { PersistCookieStorage } from './shared/plugins/vuex-persist/PersistCookieStorage';
-import { AppModule }            from './app/module';
-import { CounterModule }        from './counter/module';
-import { OnboardModule }            from './onboard/module';
+import { AppModule } from './app/module';
+import { CounterModule } from './counter/module';
+import { OnboardModule } from './onboard/module';
 
 Vue.use(Vuex);
 
